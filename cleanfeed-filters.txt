@@ -69,6 +69,8 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 ! fmkorea "notice" remove
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
+! fmkorea "keyword filter"
+fmkorea.com##body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(.title:has-text(/BJ|남캠|여캠|철구|Blind|ㅇㅎ|거유|딸딸이|혐|금리|약후|후방|불평등|더본|맘충|박위|백종원|블라인드|이숙캠|이혼숙려|이혼숙려캠프|트럼프|전장연|러너|러닝|크보 졌다리그|동학농민|캣맘|퀴어|페미|페미니스트|메갈|여혐|남혐|한녀|한남|리선족|퐁퐁|나는솔로|나솔|장사의신|장신|김세의|문신|문신충|남초|여초|이혼녀|쉬었음|캥거루|중국인|AV|양구|양구군/i))
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])

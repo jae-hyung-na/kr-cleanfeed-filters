@@ -124,7 +124,6 @@ fmkorea.com##tr:has(a:has-text(중국인))
 fmkorea.com##tr:has(a:has-text(AV))
 fmkorea.com##tr:has(a:has-text(av))
 fmkorea.com##tr:has(a:has-text(양구))
-fmkorea.com##tr:has(a:has-text(양구군))
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])

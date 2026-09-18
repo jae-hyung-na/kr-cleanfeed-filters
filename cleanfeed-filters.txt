@@ -52,6 +52,7 @@ fmkorea.com##.declare_normal
 ! fmkorea "attachment file list" remove
 fmkorea.com##tbody:has(th:has-text(첨부파일))
 ! fmkorea "comments" block
+fmkorea.com##div[id*="cmtPosition"]
 fmkorea.com##body:has(a[href*="mid=hiphop"]) div[id*="cmtPosition"]:style(display: revert !important)
 fmkorea.com##body:has(a[href*="mid=hotdeal"]) div[id*="cmtPosition"]:style(display: revert !important)
 fmkorea.com##body:has(a[href*="mid=food"]) div[id*="cmtPosition"]:style(display: revert !important)

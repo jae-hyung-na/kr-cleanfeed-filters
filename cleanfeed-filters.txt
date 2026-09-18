@@ -30,7 +30,6 @@ youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-c
 youtube.com##.ytp-watermark
 youtube.com##.ytp-cards-teaser
 youtube.com##.ytp-ce-channel
-!#endif
 ! 
 ! fmkorea_cleanfeed
 ! 

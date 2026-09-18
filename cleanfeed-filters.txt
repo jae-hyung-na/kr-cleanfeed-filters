@@ -1,30 +1,26 @@
-// ==UserScript==
-// @name         Cleanfeed Extension for uBlock Origin
-// @version      1.0
-// @author       jaehyungna
-// @match        https://*.fmkorea.com/*
-// @run-at       document-start
-// @icon         https://www.google.com/s2/favicons?domain=fmkorea.com
-// @downloadURL  https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
-// @updateURL    https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
-// ==/UserScript==
+! Title: Cleanfeed Extension(uBO)
+! Version: 2026.09.18
+! Expires: 1 day (update frequency)
+! author       jaehyungna
+! Homepage: https://github.com/FilteringDev/filterslists-KO
+! downloadURL: https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
+! updateURL: https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
 
 ! =========================================================
 ! ===================== FILTER INFO =======================
 ! =========================================================
-// 본 필터는 uBlock Origin 기준 작성
-// 각 카테고리는 사이트별 기능/UI/광고 차단 목적
-// "remove"  : UI 요소 제거
-// "block"   : 기능/영역 자체 차단
-// "ads"     : 광고 관련 차단
-// "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
-// 일부 필터는 사이트 구조 변경 시 오작동 가능
-// =========================================================
+!  본 필터는 uBlock Origin 기준 작성
+!  각 카테고리는 사이트별 기능/UI/광고 차단 목적
+!  일부 필터는 사이트 구조 변경 시 오작동 가능
+!  "remove"  : UI 요소 제거
+!  "block"   : 기능/영역 자체 차단
+!  "ads"     : 광고 관련 차단
+!  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
+! =========================================================
 
 ! =========================================================
 ! =================== YOUTUBE FILTERS =====================
 ! =========================================================
-
 ! youtube "service worker" disable
 ||www.youtube.com/sw.js$script
 
@@ -52,7 +48,6 @@ youtube.com##.ytp-ce-channel
 ! =========================================================
 ! =================== FMKOREA FILTERS =====================
 ! =========================================================
-
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
 ||fmkorea.com/*tracker*.js$script
@@ -118,7 +113,6 @@ fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
 ! =========================================================
 ! =================== DCINSIDE FILTERS ====================
 ! =========================================================
-
 ! dcinside "recent visit gallery UI" remove
 dcinside.com##.newvisit_history.vst
 

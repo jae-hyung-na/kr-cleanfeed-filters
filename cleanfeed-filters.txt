@@ -1,4 +1,4 @@
-! Title: Cleanfeed (uBO)
+! Title: Cleanfeed-KO (uBO)
 ! Expires: 1 day (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 

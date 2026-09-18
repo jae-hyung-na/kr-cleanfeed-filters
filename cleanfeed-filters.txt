@@ -52,7 +52,7 @@ fmkorea.com##.declare_normal
 ! fmkorea "attachment file list" remove
 fmkorea.com##tbody:has(th:has-text(첨부파일))
 ! fmkorea "comments" block
-fmkorea.com##div[id*="cmtPosition"]
+fmkorea.com##:not(:matches-path(/(?:^|[?&])mid=(?:hiphop|hotdeal|food|digital)(?:&|$)/)) div[id*="cmtPosition"]
 ||fmkorea.com/*resize_image*.js$script
 ! fmkorea "related hotdeal list" remove
 fmkorea.com##.relevant_hotdeals

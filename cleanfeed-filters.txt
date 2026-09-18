@@ -52,7 +52,10 @@ fmkorea.com##.declare_normal
 ! fmkorea "attachment file list" remove
 fmkorea.com##tbody:has(th:has-text(첨부파일))
 ! fmkorea "comments" block
-fmkorea.com##:matches-path(/^(?!.*(?:^|[?&])mid=(?:hiphop|hotdeal|food|digital)(?:&|$))/) div[id*="cmtPosition"]
+fmkorea.com##body:has(a[href*="mid=hiphop"]) div[id*="cmtPosition"]:style(display: revert !important)
+fmkorea.com##body:has(a[href*="mid=hotdeal"]) div[id*="cmtPosition"]:style(display: revert !important)
+fmkorea.com##body:has(a[href*="mid=food"]) div[id*="cmtPosition"]:style(display: revert !important)
+fmkorea.com##body:has(a[href*="mid=digital"]) div[id*="cmtPosition"]:style(display: revert !important)
 ||fmkorea.com/*resize_image*.js$script
 ! fmkorea "related hotdeal list" remove
 fmkorea.com##.relevant_hotdeals

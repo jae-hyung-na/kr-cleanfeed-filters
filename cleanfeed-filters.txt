@@ -1,0 +1,126 @@
+// ==UserScript==
+// @name         Cleanfeed Extension for uBlock Origin
+// @version      1.0
+// @author       jaehyungna
+// @match        https://*.fmkorea.com/*
+// @run-at       document-start
+// @icon         https://www.google.com/s2/favicons?domain=fmkorea.com
+// @downloadURL  https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
+// @updateURL    https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
+// ==/UserScript==
+
+! =========================================================
+! ===================== FILTER INFO =======================
+! =========================================================
+// 본 필터는 uBlock Origin 기준 작성
+// 각 카테고리는 사이트별 기능/UI/광고 차단 목적
+// "remove"  : UI 요소 제거
+// "block"   : 기능/영역 자체 차단
+// "ads"     : 광고 관련 차단
+// "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
+// 일부 필터는 사이트 구조 변경 시 오작동 가능
+// =========================================================
+
+! =========================================================
+! =================== YOUTUBE FILTERS =====================
+! =========================================================
+
+! youtube "service worker" disable
+||www.youtube.com/sw.js$script
+
+! youtube "menu ui" remove
+youtube.com###menu
+
+! youtube "comments" block 
+youtube.com##ytd-comments
+
+! youtube "ambient mode" block 
+youtube.com###cinematics.ytd-watch-flexy
+youtube.com###cinematics,#shorts-cinematic-container
+
+! youtube "home mixeds" hide
+youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
+
+! youtube "sidebar mixes" hide
+youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
+
+! youtube "channel watermark" disable
+youtube.com##.ytp-watermark
+youtube.com##.ytp-cards-teaser
+youtube.com##.ytp-ce-channel
+
+! =========================================================
+! =================== FMKOREA FILTERS =====================
+! =========================================================
+
+! fmkorea "lightweight script trim"
+||fmkorea.com/*analytics*.js$script
+||fmkorea.com/*tracker*.js$script
+
+! fmkorea "recent visited UI" remove
+fmkorea.com##.fm-recent-visited
+
+! fmkorea "recent searches UI" remove
+fmkorea.com##.recent_searches
+
+! fmkorea "floating controls" remove
+fmkorea.com##.m_no_533
+fmkorea.com##.rd_nav
+
+! fmkorea "post address copy UI" remove
+fmkorea.com##.document_address
+
+! fmkorea "share button UI" remove
+fmkorea.com##.doc_sns
+
+! fmkorea "report button" remove
+fmkorea.com##.declare_normal
+
+! fmkorea "attachment file list" remove
+fmkorea.com##tbody:has(th:has-text(첨부파일))
+
+! fmkorea "comments" block
+fmkorea.com##div[id*="cmtPosition"]
+||fmkorea.com/*resize_image*.js$script
+
+! fmkorea "related hotdeal list" remove
+fmkorea.com##.relevant_hotdeals
+
+! fmkorea "affiliate product ads" remove
+fmkorea.com##.relevant_products_from_ad
+
+! fmkorea "top widget (today best / board popular)" remove
+fmkorea.com##aside.content_widget
+
+! fmkorea "homepage header" remove
+fmkorea.com##.logo > p.about
+fmkorea.com##.logged_info
+fmkorea.com##header#header::before
+fmkorea.com##header#header:style(margin-bottom: 0 !important;)
+fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
+
+! fmkorea "notice" remove
+fmkorea.com##.fm_global_notice
+fmkorea.com##tr.notice
+
+! fmkorea "poten galleries" blcok
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=soop"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=chzzk"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=starcraft"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=vtuber"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=lol"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=lol_foreign"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=fifa_online"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
+
+! =========================================================
+! =================== DCINSIDE FILTERS ====================
+! =========================================================
+
+! dcinside "recent visit gallery UI" remove
+dcinside.com##.newvisit_history.vst
+
+! dcinside "memory leak"
+||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important

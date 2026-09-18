@@ -72,7 +72,6 @@ fmkorea.com##tr.notice
 !
 ! fmkorea "keyword filter"
 ! 본 필터는 에펨코리아에서 혐오 표현이 자주 달리는 키워드 게시글 필터
-!
 fmkorea.com##tr:has(a:has-text(BJ))
 fmkorea.com##tr:has(a:has-text(bj))
 fmkorea.com##tr:has(a:has-text(여캠))

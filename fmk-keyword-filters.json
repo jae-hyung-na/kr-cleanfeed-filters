@@ -1,0 +1,18 @@
+ {
+  "imgEmbed": true,
+  "blockSearchAssist": true,
+  "skipAd": true,
+  "blockUser": false,
+  "blockUserList": "[]",
+  "blockKeyword": true,
+  "blockKeywordList": "[\"BJ\",\"bj\",\"여캠\",\"Blind\",\"ㅇㅎ\",\"거유\",\"딸딸이\",\"혐\",\"금리\",\"후방\",\"불평등\",\"더본\",\"맘충\",\"박위\",\"백종원\",\"블라인드\",\"이숙캠\",\"이혼숙려\",\"트럼프\",\"전장연\",\"러너\",\"러닝\",\"크보 졌다리그\",\"동학농민\",\"철구\",\"캣맘\",\"퀴어\",\"페미\",\"페미니스트\",\"메갈\",\"여혐\",\"남혐\",\"한녀\",\"한남\",\"리선족\",\"퐁퐁\",\"나는솔로\",\"나솔\",\"장사의신\",\"장신\",\"김세의\",\"문신\",\"문신충\",\"남초\",\"여초\",\"이혼녀\",\"쉬었음\",\"캥거루\",\"중국인\",\"AV\",\"av\",\"이혼숙려캠프\",\"이혼숙려\",\"이숙캠\",\"양구\",\"양구군\"]",
+  "blockCategory": false,
+  "blockCategoryList": "[]",
+  "useMemo": true,
+  "userMemoDict": "{}",
+  "blockNotice": false,
+  "blockNav": false,
+  "blockRecent": false,
+  "blockFmAlert": false,
+  "autoDelComment": false
+}

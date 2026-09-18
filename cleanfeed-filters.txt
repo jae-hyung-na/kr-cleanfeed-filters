@@ -30,10 +30,6 @@ youtube.com##.ytp-cards-teaser
 youtube.com##.ytp-ce-channel
 !#endif
 
-
-
-!#endif
-
 !#if !fmkorea_cleanfeed
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
@@ -84,17 +80,9 @@ fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=fifa_online"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
 !#endif
 
-
-
-!#endif
-
 !#if !dcinside_cleanfeed
 ! dcinside "recent visit gallery UI" remove
 dcinside.com##.newvisit_history.vst
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important
-!#endif
-
-
-
 !#endif

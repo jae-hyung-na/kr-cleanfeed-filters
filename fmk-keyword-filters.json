@@ -1,4 +1,11 @@
 {
+  "_meta": {
+    "title": "FmkFilters-Keywords",
+    "version": "2026.09.18",
+    "homepage": "https://github.com/jae-hyung-na/kr-cleanfeed-filters"
+    "Description": "본 필터는 에펨코리아에서 혐오 표현이 자주 달리는 키워드 게시글 필터"
+  },
+}
   "fmkFilter::filterMode": "hide",
   "fmkFilter::hideRepliesCountMethod": "downvotes",
   "fmkFilter::hideRepliesMode": "hide",
@@ -21,6 +28,7 @@
     "블라인드": true,
     "이숙캠": true,
     "이혼숙려": true,
+    "이혼숙려캠프": true,
     "트럼프": true,
     "전장연": true,
     "러너": true,
@@ -54,7 +62,6 @@
     "중국인": true,
     "AV": true,
     "av": true,
-    "이혼숙려캠프": true,
     "양구": true,
     "양구군": true
   },

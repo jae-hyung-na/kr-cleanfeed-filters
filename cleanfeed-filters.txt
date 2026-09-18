@@ -48,7 +48,7 @@ youtube.com##.ytp-ce-channel
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
 ||fmkorea.com/*tracker*.js$script
-
+!
 ! fmkorea "recent visited UI" remove
 fmkorea.com##.fm-recent-visited
 
@@ -115,5 +115,4 @@ dcinside.com##.newvisit_history.vst
 
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important
-
 !#endif

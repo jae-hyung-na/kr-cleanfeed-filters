@@ -1,3 +1,14 @@
+// ==UserScript==
+// @name         Cleanfeed Extension for FMKOREA
+// @version      1.0
+// @author       jaehyungna
+// @match        https://*.fmkorea.com/*
+// @run-at       document-start
+// @icon         https://www.google.com/s2/favicons?domain=fmkorea.com
+// @downloadURL  https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
+// @updateURL    https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
+// ==/UserScript==
+
 // 붙여넣고 실행
 (() => {
   // 여기 JSON 문자열을 네 설정으로 교체하거나 그대로 변수에 넣어라

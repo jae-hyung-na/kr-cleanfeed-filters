@@ -2,9 +2,6 @@
 ! Expires: 1 day (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 
-! =========================================================
-! ===================== FILTER INFO =======================
-! =========================================================
 !  본 필터는 uBlock Origin 기준 작성
 !  각 카테고리는 사이트별 기능/UI/광고 차단 목적
 !  일부 필터는 사이트 구조 변경 시 오작동 가능
@@ -12,9 +9,8 @@
 !  "block"   : 기능/영역 자체 차단
 !  "ads"     : 광고 관련 차단
 !  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
-! =========================================================
 
-!#if youtube_cleanfeed
+!#if !youtube_cleanfeed
 ! youtube "service worker" disable
 ||www.youtube.com/sw.js$script
 ! youtube "menu ui" remove
@@ -38,7 +34,7 @@ youtube.com##.ytp-ce-channel
 
 !#endif
 
-!#if fmkorea_cleanfeed
+!#if !fmkorea_cleanfeed
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
 ||fmkorea.com/*tracker*.js$script
@@ -92,7 +88,7 @@ fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
 
 !#endif
 
-!#if dcinside_cleanfeed
+!#if !dcinside_cleanfeed
 ! dcinside "recent visit gallery UI" remove
 dcinside.com##.newvisit_history.vst
 ! dcinside "memory leak"

@@ -115,4 +115,4 @@ dcinside.com##.newvisit_history.vst
 
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important
-!#endif
+!

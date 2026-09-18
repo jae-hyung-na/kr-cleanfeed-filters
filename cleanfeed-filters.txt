@@ -1,10 +1,6 @@
-! Title: Cleanfeed Extension(uBO)
-! Version: 2026.09.18
+! Title: Cleanfeed (uBO)
 ! Expires: 1 day (update frequency)
-! author       jaehyungna
-! Homepage: https://github.com/FilteringDev/filterslists-KO
-! downloadURL: https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
-! updateURL: https://raw.githubusercontent.com/jae-hyung-na/kr-cleanfeed-filters/refs/heads/main/fmk-filters.txt
+! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 
 ! =========================================================
 ! ===================== FILTER INFO =======================
@@ -18,6 +14,7 @@
 !  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
 ! =========================================================
 
+!#if cap_user_stylesheet
 ! =========================================================
 ! =================== YOUTUBE FILTERS =====================
 ! =========================================================
@@ -118,3 +115,5 @@ dcinside.com##.newvisit_history.vst
 
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important
+
+!#endif

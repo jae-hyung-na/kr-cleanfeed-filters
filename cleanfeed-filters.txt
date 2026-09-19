@@ -1,5 +1,5 @@
 ! Title: Cleanfeed-KO (uBO)
-! Version: 2026.09.18
+! Version: 2026.09.19
 ! Expires: 1 day (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 ! 

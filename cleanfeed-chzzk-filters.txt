@@ -1,5 +1,5 @@
-! Title: cleanfeed-chzzk-filters (uBO)
-! Last modified: 2026-09-10
+! Title: Cleanfeed-Chzzk (uBO)
+! Last modified: 2026-09-19
 ! Expires: 1 day (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 

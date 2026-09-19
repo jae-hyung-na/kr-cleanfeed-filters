@@ -1,58 +1,41 @@
-! Title: Cleanfeed-Chzzk (uBO)
+! Title: Cleanfeed-Chzzk-Popup (uBO)
 ! Expires: 1 day (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 
-/^https:\/\/nng-phinf\.pstatic\.net\/[A-z]+\/[A-z0-9._-]+\/Banner_[A-z0-9_-]+\.[A-z]+$/$domain=chzzk.naver.com
-||ssl.pstatic.net/static/nng/glive/resource/p/static/js/vendor-*.js$script,domain=chzzk.naver.com,replace=/async function iuag\(([^)]*)\)\{/async function iuag(\$1){return!1;/
-||ssl.pstatic.net/static/nng/glive/resource/p/static/js/index-*.js$script,domain=chzzk.naver.com,replace=/([A-Za-z_\$][\w\$]*)=async\([^)]*\)=>\{let [^;]*\.defaults\.baseURL[^;]*;return\(await [A-Za-z_\$][\w\$]*\.xhr\([\s\S]*?\)\)\.content\}/\$1=async(...e)=>(await e[0].get(e[1])).data.content/
-||ssl.pstatic.net/static/nng/glive/resource/p/static/js/index-*.js$script,domain=chzzk.naver.com,replace=/\.AD_NOT_DISPLAYED\b/.AD_NOT_DISPLAYED_DISABLED/g
-||api.chzzk.naver.com/service/v1/seoraksan^$xhr,domain=chzzk.naver.com
-||api.chzzk.naver.com/service/v1/lives/*/ads/current^$xhr,domain=chzzk.naver.com
-||api.chzzk.naver.com/ad-polling/v1/lives/*/ad^$xhr,domain=chzzk.naver.com
-||api.chzzk.naver.com/service/*/channels/*/live-detail^$removeparam=dt,domain=chzzk.naver.com
-||api.chzzk.naver.com/service/*/videos/*^$removeparam=dt,domain=chzzk.naver.com
-||siape.veta.naver.com/openrtb/$domain=chzzk.naver.com
-||ssl.pstatic.net/static/nng/sdk/refresh-detector-obfuscated.js$script,domain=chzzk.naver.com
-||tvdaily.co.kr/banner/
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-family: "Apple SD Gothic Neo", -apple-system, sans-serif;
+  font-size: 0.9rem;
+  color: #333446;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: #00ffa6;
+  box-shadow: 0 0 25px #008d59;
+}
 
-chzzk.naver.com###layout-body > div[class^="_container_"] > div[class^="_section_"] > section[class^="_container_"] > div[class^="_list_"] > .flicking-viewport > .flicking-camera > div[class^="_item_"]:has(> a[href^="https://mkt.naver.com/"])
+.shadow__btn:hover {
+  box-shadow:
+    0 0 1px #00ffa6,
+    0 0 5px #00ffa6,
+    0 0 10px #00ffa6,
+    0 0 1px #00ffa6;
+}
 
-chzzk.naver.com##div[class^="popup_cheat_key_container__"]
+body {
+  background-color: #000000;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-chzzk.naver.com##a[class*="banner_link_"][target="_blank"] > img[class*="banner_image_"][src*="/Banner_"]
-
-||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js$script,domain=chzzk.naver.com|m.cafe.naver.com|m.search.naver.com,redirect=noop.js
-||ssl.pstatic.net/tveta/libs/glad/prod/*/gfp-display-sdk.js$script,domain=chzzk.naver.com,redirect=noop.js
-||ssl.pstatic.net/tveta/libs/glad/prod/*/gfp-display-nda.js$script,domain=chzzk.naver.com,redirect=noop.js
-||ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js$script,domain=chzzk.naver.com,redirect=noop.js
-@@||nam.veta.naver.com^$xmlhttprequest,domain=chzzk.naver.com,method=options
-
-||ssl.pstatic.net/tveta/libs/gfp-instream/prod/$script,domain=chzzk.naver.com,redirect=noop.js
-||ssl.pstatic.net/melona/libs/glad_admute/$script,domain=chzzk.naver.com,redirect=noop.js
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=chzzk.naver.com,redirect=google-ima.js
-||s0.2mdn.net/instream/video/client.js$script,domain=chzzk.naver.com,redirect=noop.js
-
-chzzk.naver.com##.webplayer-internal-core-dimmed:style(display: none !important)
-chzzk.naver.com##.webplayer-internal-core-ad-ui:style(clip-path: inset(50%) !important; pointer-events: none !important)
-
-! chzzk.naver.com
-chzzk.naver.com##+js(trusted-set-local-storage-item, homeSkinCollapsedUntil, 9999999999999)
-
-||litt.ly/api/blockevents
-||nlog.naver.com/event$domain=chzzk.naver.com
-||nlog.naver.com/n$domain=chzzk.naver.com
-||kr-col-ext.nelo.navercorp.com/_store$domain=chzzk.naver.com
-||nelo2-col.navercorp.com/_store$domain=chzzk.naver.com
-||dev-col-tcp.nelo.navercorp.com/_store$domain=chzzk.naver.com
-||chzzk.naver.com/scripts/ntm_*.js$script,redirect=noop.js
-||ntm.pstatic.net/ex/nlog*.js$script,domain=chzzk.naver.com,redirect=noop.js
-
-
-chzzk.naver.com#$##viewport-box + div:has(> a[href="https://chzzk.naver.com/home/sports/fifa-worldcup-2026"]) { display: none !important; }
-chzzk.naver.com#$##header { transform: initial !important; }
-chzzk.naver.com#$##sidebar { transform: translateY(60px) !important; height: 100% !important; }
-chzzk.naver.com#$##layout-body { padding-top: 0 !important; height: 100% !important; }
-chzzk.naver.com#$##layout-body > div[class^="_container_"] > section > div[class^="_filter_"] { top: 51px !important; }
-chzzk.naver.com#$##layout-body > div[class^="_container_"] > section > div[class^="_tab_"] { top: 51px !important; }
-chzzk.naver.com#$##layout-body > div[class^="_container_"] > section > main > div[class^="_wrapper_"] { top: 124px !important; }
-chzzk.naver.com#$##layout-body > div[class^="_container_"] > section > div[class^="_area_"] > div[role="tabpanel"] > header { top: 94px !important; }
+  width: 300px;
+  min-width: 220px;
+  min-height: 120px;
+  box-sizing: border-box;
+}

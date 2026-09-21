@@ -10,8 +10,6 @@
 ! 
 ! youtube_cleanfeed
 ! 
-! youtube "service worker" disable
-||www.youtube.com/sw.js$script
 ! youtube "menu ui" remove
 youtube.com###menu
 ! youtube "comments" block 

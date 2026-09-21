@@ -31,6 +31,8 @@ youtube.com##.ytp-ce-channel
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
 ||fmkorea.com/*tracker*.js$script
+! fmkorea "night mode" force enable
+fmkorea.com##+js(set-cookie-reload, night_mode, Y)
 ! fmkorea "recent visited UI" remove
 fmkorea.com##.fm-recent-visited
 ! fmkorea "recent searches UI" remove
@@ -85,5 +87,7 @@ fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
 ! 
 ! dcinside "recent visit gallery UI" remove
 dcinside.com##.newvisit_history.vst
+! dcinside "night mode" force enable
+dcinside.com##+js(set-cookie-reload, darkmode, 1)
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important

@@ -18,7 +18,7 @@ youtube.com##ytd-comments
 youtube.com###cinematics.ytd-watch-flexy
 youtube.com###cinematics,#shorts-cinematic-container
 ! youtube "Stable Volume" disable 
-youtube.com,youtube-nocookie.com##+js(trusted-set-local-storage-item, yt-player-drc-pref, '{"data":"0","expiration":1999999999999,"creation":$now$}')
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.html5_show_drc_toggle, "")
 ! youtube "home mixeds" hide
 youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! youtube "sidebar mixes" hide

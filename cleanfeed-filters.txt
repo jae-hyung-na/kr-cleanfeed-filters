@@ -17,10 +17,6 @@ youtube.com##ytd-comments
 ! youtube "ambient mode" disalbe
 youtube.com###cinematics.ytd-watch-flexy
 youtube.com###cinematics,#shorts-cinematic-container
-! youtube "stable volume" disable 
-youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.html5_show_drc_toggle, "")
-! youtube "channel watermark" disable 
-youtube.com##.iv-branding
 ! youtube "home mixeds" hide
 youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! youtube "sidebar mixes" hide
@@ -29,6 +25,7 @@ youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-c
 youtube.com##.ytp-watermark
 youtube.com##.ytp-cards-teaser
 youtube.com##.ytp-ce-channel
+youtube.com##.iv-branding
 ! 
 ! fmkorea_cleanfeed
 ! 

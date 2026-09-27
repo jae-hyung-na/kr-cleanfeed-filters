@@ -1,6 +1,6 @@
 ! Title: Cleanfeed-KO (uBlock Origin)
 ! Version: 2026.09.19
-! Expires: 1 day (update frequency)
+! Expires: 1 hour (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 ! 
 !  본 필터는 uBlock Origin 기준 작성

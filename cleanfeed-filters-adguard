@@ -68,9 +68,8 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
 ! fmkorea "keyword filter" 
-fmkorea.com##.fm_best_widget li:-abp-contains("ㅇㅎ")
-fmkorea.com##table.bd_lst tr:has(a.title):-abp-contains("ㅇㅎ")
-fmkorea.com##.list_tbody .list_row:has(a.title):-abp-contains("ㅇㅎ")
+fmkorea.com##.list_row:has-text(백종원)
+fmkorea.com##.list_row:has-text(ㅇㅎ)
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])

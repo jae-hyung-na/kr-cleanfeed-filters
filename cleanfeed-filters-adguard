@@ -94,3 +94,6 @@ dcinside.com#%#//scriptlet('set-cookie-reload', 'darkmode', '1')
 !
 !chzzk "homepage top banner" remove
 chzzk.naver.com##div[data-nlog-area="home_top_skin"]
+!chzzk "ads pop-up" remove
+chzzk.naver.com#%#//[remove]('trusted-suppress-native-method', 'atob', '"c2V0UmVxdWVzdEhlYWRlcg=="', 'abort', 'isXhrTampered')
+chzzk.naver.com##+js(trusted-suppress-native-method, atob, c2V0UmVxdWVzdEhlYWRlcg==, prevent, isXhrTampered)

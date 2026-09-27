@@ -68,9 +68,9 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
 ! fmkorea "keyword filter" 
-fmkorea.com##body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(.title:has-text(BJ)
-fmkorea.com##body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(.title:has-text(여캠)
-fmkorea.com##body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(.title:has-text(백종원)
+fmkorea.com#?#body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(a.title:has-text("BJ"))
+fmkorea.com#?#body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(a.title:has-text("백종원"))
+fmkorea.com#?#body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(a.title:has-text("여캠"))
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])

@@ -1,0 +1,96 @@
+! Title: Cleanfeed-KO (AdGuard)
+! Version: 2026.09.27
+! Expires: 1 hour (update frequency)
+! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
+! 
+!  본 필터는 AdGuard 기준 작성 (uBlock Origin 버전에서 이식)
+!  각 카테고리는 사이트별 기능/UI/광고 차단 목적
+!  일부 필터는 사이트 구조 변경 시 오작동 가능
+!  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
+! 
+! youtube_cleanfeed
+! 
+! youtube "menu ui" remove
+youtube.com###menu
+! youtube "comments" block 
+youtube.com##ytd-comments
+! youtube "ambient mode" disalbe
+youtube.com###cinematics.ytd-watch-flexy
+youtube.com###cinematics,#shorts-cinematic-container
+! youtube "home mixeds" hide
+youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
+! youtube "sidebar mixes" hide
+youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
+! youtube "channel watermark" disable
+youtube.com##.ytp-watermark
+youtube.com##.ytp-cards-teaser
+youtube.com##.ytp-ce-channel
+youtube.com##.iv-branding
+! 
+! fmkorea_cleanfeed
+! 
+! fmkorea "lightweight script trim"
+||fmkorea.com/*analytics*.js$script
+||fmkorea.com/*tracker*.js$script
+! fmkorea "night mode" force enable [FIXED: AdGuard scriptlet syntax]
+fmkorea.com#%#//scriptlet('set-cookie-reload', 'night_mode', 'Y')
+! fmkorea "recent visited UI" remove
+fmkorea.com##.fm-recent-visited
+! fmkorea "recent searches UI" remove
+fmkorea.com##.recent_searches
+! fmkorea "floating controls" remove
+fmkorea.com##.m_no_533
+fmkorea.com##.rd_nav
+! fmkorea "post address copy UI" remove
+fmkorea.com##.document_address
+! fmkorea "share button UI" remove
+fmkorea.com##.doc_sns
+! fmkorea "report button" remove
+fmkorea.com##.declare_normal
+! fmkorea "attachment file list" remove
+fmkorea.com##tbody:has(th:has-text(첨부파일))
+! fmkorea "comments" block
+fmkorea.com##div[id*="cmtPosition"]
+||fmkorea.com/*resize_image*.js$script
+! fmkorea "related hotdeal list" remove
+fmkorea.com##.relevant_hotdeals
+! fmkorea "affiliate product ads" remove
+fmkorea.com##.relevant_products_from_ad
+! fmkorea "top widget (today best / board popular)" remove
+fmkorea.com##aside.content_widget
+! fmkorea "homepage header" remove
+fmkorea.com##.logo > p.about
+fmkorea.com##.logged_info
+fmkorea.com##header#header::before
+fmkorea.com##header#header:style(margin-bottom: 0 !important;)
+fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
+! fmkorea "notice" remove
+fmkorea.com##.fm_global_notice
+fmkorea.com##tr.notice
+! fmkorea "keyword filter" [FIXED: ## -> #?# because :has()+:has-text()+:is() combo needs forced ExtendedCss engine]
+fmkorea.com#?#body:has(a[href*="/best"]) :is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li.li):has(.title:has-text(/BJ|숲TV|SOOP|SOOP TV|남캠|여캠|철구|Blind|블라인드|블라|ㅇㅎ|거유|성욕|딸딸이|혐|금리|백수|취업|약후|후방|불평등|더본|맘충|박위|백종원|MBC|이숙캠|이혼숙려|이혼숙려캠프|트럼프|배달거지|전장연|러너|러닝|크보 졌다리그|동학농민|캣맘|퀴어|페미|페미니스트|메갈|여혐|남혐|한녀|한남|모태솔로|모솔|리선족|일뽕|TanVuus|Himass|히마스|탄부|베트남|베트콩|PUBG|펍지|배그|배틀그라운드|김채연|퐁퐁|나는솔로|나솔|장사의신|장신|김세의|박진영|문신|문신충|남초|여초|이혼녀|쉬었음|캥거루|중국인|AV|양구|양구군|한문철|암살자(들)|암살자들|삼국지/i))
+! fmkorea "poten galleries" blcok
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=afreecatv"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=chzzk"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=starcraft"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=vtuber"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=lol"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=lol_foreign"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=fifa_online"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
+! 
+! dcinside_cleanfeed
+! 
+! dcinside "recent visit gallery UI" remove
+dcinside.com##.newvisit_history.vst
+! dcinside "night mode" force enable [FIXED: AdGuard scriptlet syntax]
+dcinside.com#%#//scriptlet('set-cookie-reload', 'darkmode', '1')
+! dcinside "memory leak"
+||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important
+!
+! chzzk_cleanfedd
+!
+!chzzk "homepage top banner" remove
+chzzk.naver.com##div[data-nlog-area="home_top_skin"]

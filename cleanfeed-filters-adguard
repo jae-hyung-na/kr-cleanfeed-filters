@@ -68,8 +68,48 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
 ! fmkorea "keyword filter" 
-fmkorea.com##.list_row:has-text(백종원)
-fmkorea.com##.list_row:has-text(ㅇㅎ)
+! fmkorea keyword block
+fmkorea.com##table.bd_lst tr:has-text(BJ)
+fmkorea.com##.list_tbody .list_row:has-text(BJ)
+fmkorea.com##.fm_best_widget li:has-text(BJ)
+
+fmkorea.com##table.bd_lst tr:has-text(숲TV)
+fmkorea.com##.list_tbody .list_row:has-text(숲TV)
+fmkorea.com##.fm_best_widget li:has-text(숲TV)
+
+fmkorea.com##table.bd_lst tr:has-text(SOOP)
+fmkorea.com##.list_tbody .list_row:has-text(SOOP)
+fmkorea.com##.fm_best_widget li:has-text(SOOP)
+
+fmkorea.com##table.bd_lst tr:has-text(남캠)
+fmkorea.com##.list_tbody .list_row:has-text(남캠)
+fmkorea.com##.fm_best_widget li:has-text(남캠)
+
+fmkorea.com##table.bd_lst tr:has-text(여캠)
+fmkorea.com##.list_tbody .list_row:has-text(여캠)
+fmkorea.com##.fm_best_widget li:has-text(여캠)
+
+fmkorea.com##table.bd_lst tr:has-text(철구)
+fmkorea.com##.list_tbody .list_row:has-text(철구)
+fmkorea.com##.fm_best_widget li:has-text(철구)
+
+fmkorea.com##table.bd_lst tr:has-text(블라인드)
+fmkorea.com##.list_tbody .list_row:has-text(블라인드)
+fmkorea.com##.fm_best_widget li:has-text(블라인드)
+
+fmkorea.com##table.bd_lst tr:has-text(ㅇㅎ)
+fmkorea.com##.list_tbody .list_row:has-text(ㅇㅎ)
+fmkorea.com##.fm_best_widget li:has-text(ㅇㅎ)
+
+fmkorea.com##table.bd_lst tr:has-text(거유)
+fmkorea.com##.list_tbody .list_row:has-text(거유)
+fmkorea.com##.fm_best_widget li:has-text(거유)
+
+fmkorea.com##table.bd_lst tr:has-text(성욕)
+fmkorea.com##.list_tbody .list_row:has-text(성욕)
+fmkorea.com##.fm_best_widget li:has-text(성욕)
+
+... (중략 — 아래에 자동 생성 스니펫으로 전체 키워드를 한 번에 생성할 수 있음)
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])

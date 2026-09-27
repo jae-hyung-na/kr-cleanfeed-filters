@@ -92,4 +92,5 @@ dcinside.com##+js(set-cookie-reload, darkmode, 1)
 !
 ! chzzk_cleanfedd
 !
-chzzk.naver.com##div[data-nlog-area="home_top_skin"
+!chzzk "homepage top banner" remove
+chzzk.naver.com##div[data-nlog-area="home_top_skin"]

@@ -67,7 +67,8 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 ! fmkorea "notice" remove
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
-! fmkorea "keyword filter" [FIXED: ## -> #?# because :has()+:has-text()+:is() combo needs forced ExtendedCss engine]
+! fmkorea "keyword filter" 
+[FIXED: ## -> #?# because :has()+:has-text()+:is() combo needs forced ExtendedCss engine]
 fmkorea.com#?#body:has(a[href*="/best"]) table.bd_lst tr:has(.title:has-text(BJ))
 fmkorea.com#?#body:has(a[href*="/best"]) table.bd_lst tr:has(.title:has-text(여캠))
 fmkorea.com#?#body:has(a[href*="/best"]) table.bd_lst tr:has(.title:has-text(페미))

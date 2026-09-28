@@ -94,24 +94,18 @@ dcinside.com#%#//scriptlet('set-cookie-reload', 'darkmode', '1')
 !
 !chzzk "homepage top banner" remove
 chzzk.naver.com##div[data-nlog-area="home_top_skin"]
-!chzzk "ads pop-up" remove
-chzzk.naver.com#%#//[remove]('trusted-suppress-native-method', 'atob', '"c2V0UmVxdWVzdEhlYWRlcg=="', 'abort', 'isXhrTampered')
-chzzk.naver.com##+js(trusted-suppress-native-method, atob, c2V0UmVxdWVzdEhlYWRlcg==, prevent, isXhrTampered)
-! chzzk "ads api" 
-||api.chzzk.naver.com/service/v1/seoraksan^$xhr,domain=chzzk.naver.com 
-||api.chzzk.naver.com/service/v1/lives/*/ads/current^$xhr,domain=chzzk.naver.com 
-||api.chzzk.naver.com/ad-polling/v1/lives/*/ad^$xhr,domain=chzzk.naver.com 
-! chzzk "ads/tracking" 
-||api.chzzk.naver.com/service/*/channels/*/live-detail^$removeparam=dt,domain=chzzk.naver.com 
-||api.chzzk.naver.com/service/*/videos/*^$removeparam=dt,domain=chzzk.naver.com 
-||siape.veta.naver.com/openrtb/$domain=chzzk.naver.com 
-||ssl.pstatic.net/static/nng/sdk/refresh-detector-obfuscated.js$script,domain=chzzk.naver.com 
-! chzzk "player dim/overlay" 
-chzzk.naver.com#$#.webplayer-internal-core-dimmed { display: none !important; } 
-! ! chzzk "adblock detection - ad area css spoof"
-chzzk.naver.com#%#//scriptlet('spoof-css', '.banner_ad_wrapper', 'display', 'block') 
-```
-! ! chzzk "adblock pop-up" remove
+! chzzk "ads pop-up" remove
 chzzk.naver.com#%#//scriptlet('trusted-suppress-native-method', 'atob', '"c2V0UmVxdWVzdEhlYWRlcg=="', 'abort', 'isXhrTampered')
-chzzk.naver.com##+js(trusted-suppress-native-method, atob, c2V0UmVxdWVzdEhlYWRlcg==, prevent, isXhrTampered)
-chzzk.naver.com#%#//scriptlet('prevent-xhr', '/(veta.naver.com\/vas|veta.naver.com\/gfp|veta.naver.com\/call)/ method:OPTIONS') 
+! chzzk "ads api" remove
+||api.chzzk.naver.com/service/v1/seoraksan^$xhr,domain=chzzk.naver.com
+||api.chzzk.naver.com/service/v1/lives/*/ads/current^$xhr,domain=chzzk.naver.com
+||api.chzzk.naver.com/ad-polling/v1/lives/*/ad^$xhr,domain=chzzk.naver.com
+! chzzk "ads/tracking" remove
+||api.chzzk.naver.com/service/*/channels/*/live-detail^$removeparam=dt,domain=chzzk.naver.com
+||api.chzzk.naver.com/service/*/videos/*^$removeparam=dt,domain=chzzk.naver.com
+||siape.veta.naver.com/openrtb/$domain=chzzk.naver.com
+||ssl.pstatic.net/static/nng/sdk/refresh-detector-obfuscated.js$script,domain=chzzk.naver.com
+! chzzk "player dim/overlay" hide
+chzzk.naver.com#$#.webplayer-internal-core-dimmed { display: none !important; }
+! chzzk "adblock detection - ad area css spoof" spoof
+chzzk.naver.com#%#//scriptlet('spoof-css', '.banner_ad_wrapper', 'display', 'block')

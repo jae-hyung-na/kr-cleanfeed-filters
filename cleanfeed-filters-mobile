@@ -32,6 +32,10 @@ youtube.com##.iv-branding
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
 ||fmkorea.com/*tracker*.js$script
+! fmkorea "recent visited UI" remove
+m.fmkorea.com##.fm-recent-visited
+! fmkorea "recent searches UI" remove
+m.fmkorea.com##.recent_searches
 ! fmkorea "post address copy UI" remove
 fmkorea.com##.document_address
 ! fmkorea "floating controls" remove

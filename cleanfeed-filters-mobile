@@ -3,7 +3,7 @@
 ! Expires: 1 hour (update frequency)
 ! Homepage: https://github.com/jae-hyung-na/kr-cleanfeed-filters
 ! 
-!  본 필터는 uBlock Origin 기준 작성
+!  본 필터는 Mobile 기준 작성
 !  각 카테고리는 사이트별 기능/UI/광고 차단 목적
 !  일부 필터는 사이트 구조 변경 시 오작동 가능
 !  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)

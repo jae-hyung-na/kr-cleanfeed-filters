@@ -58,12 +58,6 @@ fmkorea.com##.relevant_hotdeals
 fmkorea.com##.relevant_products_from_ad
 ! fmkorea "top widget (today best / board popular)" remove
 fmkorea.com##aside.content_widget
-! fmkorea "homepage header" remove
-fmkorea.com##.logo > p.about
-fmkorea.com##.logged_info
-fmkorea.com##header#header::before
-fmkorea.com##header#header:style(margin-bottom: 0 !important;)
-fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 ! fmkorea "notice" remove
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice

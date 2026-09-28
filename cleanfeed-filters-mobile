@@ -10,44 +10,44 @@
 ! 
 ! youtube cleanfeed
 ! 
-m.youtube.com###menu
-m.youtube.com##ytd-comments
-m.youtube.com###cinematics.ytd-watch-flexy
-m.youtube.com###cinematics,#shorts-cinematic-container
-m.youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
-m.youtube.com##ytd-compact-radio-renderer
-m.youtube.com##.ytp-watermark
-m.youtube.com##.ytp-cards-teaser
-m.youtube.com##.ytp-ce-channel
-m.youtube.com##.iv-branding
+youtube.com###menu
+youtube.com##ytd-comments
+youtube.com###cinematics.ytd-watch-flexy
+youtube.com###cinematics,#shorts-cinematic-container
+youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
+youtube.com##ytd-compact-radio-renderer
+youtube.com##.ytp-watermark
+youtube.com##.ytp-cards-teaser
+youtube.com##.ytp-ce-channel
+youtube.com##.iv-branding
 !
 ! fmkorea cleanfeed
 !
-||m.fmkorea.com/*analytics*.js$script
-||m.fmkorea.com/*tracker*.js$script
-m.fmkorea.com##.fm-recent-visited
-m.fmkorea.com##.recent_searches
-m.fmkorea.com##.m_no_533
-m.fmkorea.com##.rd_nav
-m.fmkorea.com##.document_address
-m.fmkorea.com##.doc_sns
-m.fmkorea.com##.declare_normal
-m.fmkorea.com##tbody:has(th:has-text(첨부파일))  /* may require uBO; if not supported, remove this line */
-m.fmkorea.com##div[id*="cmtPosition"]
+||fmkorea.com/*analytics*.js$script
+||fmkorea.com/*tracker*.js$script
+fmkorea.com##.fm-recent-visited
+fmkorea.com##.recent_searches
+fmkorea.com##.m_no_533
+fmkorea.com##.rd_nav
+fmkorea.com##.document_address
+fmkorea.com##.doc_sns
+fmkorea.com##.declare_normal
+fmkorea.com##tbody:has(th:has-text(첨부파일))  /* may require uBO; if not supported, remove this line */
+fmkorea.com##div[id*="cmtPosition"]
 ||m.fmkorea.com/*resize_image*.js$script
-m.fmkorea.com##.relevant_hotdeals
-m.fmkorea.com##.relevant_products_from_ad
-m.fmkorea.com##aside.content_widget
-m.fmkorea.com##.logo > p.about
-m.fmkorea.com##.logged_info
-m.fmkorea.com##header#header
-m.fmkorea.com##.fm_global_notice
-m.fmkorea.com##tr.notice
+fmkorea.com##.relevant_hotdeals
+fmkorea.com##.relevant_products_from_ad
+fmkorea.com##aside.content_widget
+fmkorea.com##.logo > p.about
+fmkorea.com##.logged_info
+fmkorea.com##header#header
+fmkorea.com##.fm_global_notice
+fmkorea.com##tr.notice
 ! fmkorea "keyword filter"
 m.fmkorea.com##table.bd_lst tr:not(.notice):has(.title:contains((/BJ|숲TV|SOOP|SOOP TV|남캠|여캠|철구|Blind|블라인드|블라|ㅇㅎ|참젖|거유|성욕|딸딸이|혐|금리|백수|취업|약후|후방|불평등|더본|맘충|박위|백종원|MBC|이숙캠|이혼숙려|이혼숙려캠프|트럼프|배달거지|전장연|러너|러닝|크보\s*졌다리그|십일조|동학농민|캣맘|퀴어|페미|페미니스트|메갈|여혐|남혐|한녀|한남|모태솔로|모솔|리선족|암살자들|암살자(들)|여수\s*섬\s*박람회|지금\s*직장인들\s*심정|\s*직장인들\s*심정|배달\s*어플\s*리뷰|일뽕|TanVuus|Himass|히마스|탄부|베트남|베트콩|PUBG|펍지|배그|배틀그라운드|김채연|퐁퐁|나는솔로|나솔|장사의신|장신|김세의|박진영|문신|문신충|남초|여초|이혼녀|쉬었음|캥거루|중국인|AV|양구|양구군|한문철|암살자|암살자들|삼국지/i))
 ! 
 ! dcinside_cleanfeed
 ! 
 ! dcInside "minimal tweaks"
-m.dcinside.com##.newvisit_history.vst
+gall.dcinside.com##.newvisit_history.vst
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com

@@ -92,18 +92,42 @@ dcinside.com#%#//scriptlet('set-cookie-reload', 'darkmode', '1')
 !
 ! chzzk_cleanfedd
 !
-!chzzk "homepage top banner" remove
 chzzk.naver.com##div[data-nlog-area="home_top_skin"]
-! chzzk "ads api" (remove)
+[/^https:\/\/nng-phinf\.pstatic\.net\/[A-z]+\/[A-z0-9._-]+\/Banner_[A-z0-9_-]+\.[A-z]+$/]$domain=chzzk.naver.com
+||ssl.pstatic.net/static/nng/glive/resource/p/static/js/vendor-*.js$script,domain=chzzk.naver.com,replace=/async function iuag\(([^)]*)\)\{/async function iuag($1){return!1;/
+||ssl.pstatic.net/static/nng/glive/resource/p/static/js/index-*.js$script,domain=chzzk.naver.com,replace=/([A-Za-z_\$][\w\$]*)=async\([^)]*\)=>\{let [^;]*\.defaults\.baseURL[^;]*;return\(await [A-Za-z_\$][\w\$]*\.xhr\([\s\S]*?\)\)\.content\}/$1=async(...e)=>(await e[0].get(e[1])).data.content/
+||ssl.pstatic.net/static/nng/glive/resource/p/static/js/index-*.js$script,domain=chzzk.naver.com,replace=/\.AD_NOT_DISPLAYED\b/.AD_NOT_DISPLAYED_DISABLED/g
 ||api.chzzk.naver.com/service/v1/seoraksan^$xhr,domain=chzzk.naver.com
 ||api.chzzk.naver.com/service/v1/lives/*/ads/current^$xhr,domain=chzzk.naver.com
 ||api.chzzk.naver.com/ad-polling/v1/lives/*/ad^$xhr,domain=chzzk.naver.com
-! chzzk "ads/tracking" (remove)
 ||api.chzzk.naver.com/service/*/channels/*/live-detail^$removeparam=dt,domain=chzzk.naver.com
 ||api.chzzk.naver.com/service/*/videos/*^$removeparam=dt,domain=chzzk.naver.com
 ||siape.veta.naver.com/openrtb/$domain=chzzk.naver.com
 ||ssl.pstatic.net/static/nng/sdk/refresh-detector-obfuscated.js$script,domain=chzzk.naver.com
-! chzzk "player dim/overlay" (hide)
+chzzk.naver.com#$##viewport-box + div:has(> a[href="https://chzzk.naver.com/home/sports/fifa-worldcup-2026"]) { display: none !important; }
 chzzk.naver.com#$#.webplayer-internal-core-dimmed { display: none !important; }
-! chzzk "adblock detection - ad area css spoof" (spoof)
-chzzk.naver.com#%#//scriptlet('spoof-css', '.banner_ad_wrapper', 'display', 'block')
+chzzk.naver.com#%#//scriptlet('trusted-set-local-storage-item', 'homeSkinCollapsedUntil', '9999999999999')
+chzzk.naver.com#%#//scriptlet('spoof-css', ':is(.banner_ad_wrapper,.TopAdBox,.ad--dart,.ad-container-side,.ad-tag__wrapper,.ad_regular1,.ad_slot_inread,.adguru-modal-popup,.ads_box_headline,.adsmedrect,.advert-loader,.advertisementContainer,.advertising-top-box,.artnet-ads-ad,.dianomi_context,.divAdright,.footer__ads--content,.header-article-ads,.header-bannerad,.incontentAd,.js-anchor-ad,.module-box-ads,.moduletable_advertisement,.news-ad-square-a,.nfy-ad-wrapper,.rekl_left,.sidebar-advert,.slideshow-ad-wrapper,.widget--local-ads,.zaf-adhesion-container,.zerg-widget)', 'display', 'block')
+chzzk.naver.com#%#//scriptlet('trusted-json-set', 'JSON.parse', 'meta.p2p', 'false', 'meta')
+chzzk.naver.com#%#//scriptlet('json-prune', 'media.[].p2pPath media.[].p2pPathUrlEncoding media.[].encodingTrack.[].p2pPath media.[].encodingTrack.[].p2pPathUrlEncoding')
+chzzk.naver.com#%#//scriptlet('trusted-suppress-native-method', 'atob', '"c2V0UmVxdWVzdEhlYWRlcg=="', 'abort')
+chzzk.naver.com#%#//scriptlet('trusted-suppress-native-method', 'atob', '"Y3J5cHRv"', 'abort')
+||nam.veta.naver.com/vas|$xmlhttprequest,domain=chzzk.naver.com,redirect=nooptext
+||nam.veta.naver.com/gfp$xmlhttprequest,domain=chzzk.naver.com,redirect=nooptext
+||nam.veta.naver.com/call|$xmlhttprequest,domain=chzzk.naver.com,redirect=nooptext
+||nam.veta.naver.com/nac/$xmlhttprequest,domain=chzzk.naver.com,redirect=nooptext
+||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js$script,domain=chzzk.naver.com|m.cafe.naver.com,redirect=noopjs
+||ssl.pstatic.net/tveta/libs/glad/prod/*/gfp-display-sdk.js$script,domain=chzzk.naver.com,redirect=noopjs
+||ssl.pstatic.net/tveta/libs/glad/prod/*/gfp-display-nda.js$script,domain=chzzk.naver.com,redirect=noopjs
+||ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js$script,domain=chzzk.naver.com,redirect=noopjs
+||ssl.pstatic.net/tveta/libs/gfp-instream/prod/$script,domain=chzzk.naver.com,redirect=noopjs
+||ssl.pstatic.net/melona/libs/glad_admute/$script,domain=chzzk.naver.com,redirect=noopjs
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=chzzk.naver.com,redirect=google-ima3
+||s0.2mdn.net/instream/video/client.js$script,domain=chzzk.naver.com,redirect=noopjs
+||chzzk.naver.com/scripts/ntm_*.js$script,redirect=noopjs
+||ntm.pstatic.net/ex/nlog*.js$script,domain=chzzk.naver.com,redirect=noopjs
+||nlog.naver.com/event$domain=chzzk.naver.com
+||nlog.naver.com/n$domain=chzzk.naver.com
+||kr-col-ext.nelo.navercorp.com/_store$domain=chzzk.naver.com
+||nelo2-col.navercorp.com/_store$domain=chzzk.naver.com
+||dev-col-tcp.nelo.navercorp.com/_store$domain=chzzk.naver.com

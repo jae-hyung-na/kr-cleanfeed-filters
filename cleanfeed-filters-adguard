@@ -68,12 +68,12 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
 ! fmkorea "keyword filter" 
-fmkorea.com##:is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li):has-text(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|이세돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i):upward(tr)
-fmkorea.com##:is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li):has-text(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|메갈|트페미|캣맘|퀴어|페미|페미니스트|맘충|퐁퐁|일뽕|리선족|리선족|베트남|베트콩|중국인|문신|문신충|쉬었음|백수|취업|캥거루|배달거지|전장연|러너|러닝|십일조|교회|불평등|금리/i):upward(tr)
-fmkorea.com##:is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li):has-text(/ㅇㅎ|참젖|거유|성욕|딸딸이|혐|약후|후방|AV|김채연/i):upward(tr)
-fmkorea.com##:is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li):has-text(/이숙캠|이혼숙려|이혼숙려캠프|이혼녀|나는솔로|나솔|모태솔로|모솔|MBC|암살자(들)|암살자들|삼국지/i):upward(tr)
-fmkorea.com##:is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li):has-text(/박위|더본|백종원|장사의신|장신|김세의|박진영|한문철|박우현|보디빌더|트럼프|여수\s*섬\s*박람회|양구|양구군|동학농민/i):upward(tr)
-fmkorea.com##:is(table.bd_lst tr:not(.notice), .list_tbody .list_row, .fm_best_widget li):has-text(/지금\s*직장인들\s*심정|\s*직장인들\s*심정|크보\s*졌다리그/i):upward(tr)
+fmkorea.com##a:has-text(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|이세돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i)):upward(.list_row)
+fmkorea.com##a:has-text(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|메갈|트페미|캣맘|퀴어|페미|페미니스트|맘충|퐁퐁|일뽕|리선족|리선족|베트남|베트콩|중국인|문신|문신충|쉬었음|백수|취업|캥거루|배달거지|전장연|러너|러닝|십일조|교회|불평등|금리/i)):upward(.list_row)
+fmkorea.com##a:has-text(/ㅇㅎ|참젖|거유|성욕|딸딸이|혐|약후|후방|AV|김채연/i)):upward(.list_row)
+fmkorea.com##a:has-text(/이숙캠|이혼숙려|이혼숙려캠프|이혼녀|나는솔로|나솔|모태솔로|모솔|MBC|암살자(들)|암살자들|삼국지/i)):upward(.list_row)
+fmkorea.com##a:has-text(/박위|더본|백종원|장사의신|장신|김세의|박진영|한문철|박우현|보디빌더|트럼프|여수\s*섬\s*박람회|양구|양구군|동학농민/i):upward(.list_row)
+fmkorea.com##a:has-text(/지금\s*직장인들\s*심정|\s*직장인들\s*심정|크보\s*졌다리그/i)):upward(.list_row)
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=mystery"])

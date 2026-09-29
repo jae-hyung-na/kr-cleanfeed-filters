@@ -72,7 +72,7 @@ fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):no
 fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|메갈|트페미|캣맘|퀴어|페미|페미니스트|맘충|퐁퐁|일뽕|리선족|리선족|베트남|베트콩|중국인|문신|문신충|쉬었음|백수|취업|캥거루|배달거지|전장연|러너|러닝|십일조|교회|불평등|금리/i)
 fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/ㅇㅎ|참젖|거유|성욕|딸딸이|혐|약후|후방|AV/i)
 fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/이숙캠|이혼숙려|이혼숙려캠프|이혼녀|나는솔로|나솔|모태솔로|모솔|MBC|암살자\(들\)|암살자들|삼국지/i)
-fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/박위|육영수|이동진|더본|백종원|장사의신|장신|김세의|박진영|한문철|멸공반점|점박우현|보디빌더|닛몰캐시|닛몰캐쉬|트럼프|여수\s*섬\s*박람회|양구|양구군|동학농민/i)
+fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/박위|육영수|이동진|더본|백종원|장사의신|장신|김세의|박진영|한문철|사망여우|사망\s*여우|멸공반점|박우현|보디빌더|닛몰캐시|닛몰캐쉬|트럼프|여수\s*섬\s*박람회|양구|양구군|동학농민/i)
 fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/지금\s*직장인들\s*심정|\s*직장인들\s*심정|크보\s*졌다리그/i)
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])

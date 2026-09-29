@@ -68,7 +68,7 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
 ! fmkorea "keyword filter" 
-fmkorea.com##a:has-text(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|이세돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i)
+fmkorea.com##a:has-text(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|이세돌|이세계아이돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i)
 fmkorea.com##a:has-text(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|메갈|트페미|캣맘|퀴어|페미|페미니스트|맘충|퐁퐁|일뽕|리선족|리선족|베트남|베트콩|중국인|문신|문신충|쉬었음|백수|취업|캥거루|배달거지|전장연|러너|러닝|십일조|교회|불평등|금리/i)
 fmkorea.com##a:has-text(/ㅇㅎ|참젖|거유|성욕|딸딸이|약후|후방|AV|약혐|혐|/i)
 fmkorea.com##a:has-text(/이숙캠|이혼숙려|이혼숙려캠프|이혼녀|나는솔로|나솔|모태솔로|모솔|MBC|암살자(들)|암살자들|삼국지/i)

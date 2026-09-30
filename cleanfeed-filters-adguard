@@ -67,6 +67,9 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 ! fmkorea "notice" remove
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
+! fmkorea "best top-exposed posts" remove
+fmkorea.com##li.li_best2_pop1
+fmkorea.com##li.li_best2_hotdeal1
 ! fmkorea "keyword filter" 
 fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|여성시대|메갈|트페미|캣맘|퀴어|페미|페미니스트|맘충|퐁퐁|일뽕|혐한|베트남|베트콩|조선족|중국인|문신|문신충|쉬었음|캥거루|배달거지/i)
 fmkorea.com#?#:is(table.bd_lst tr, .list_tbody .list_row, .fm_best_widget li):not(.notice):contains(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|이세돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i)

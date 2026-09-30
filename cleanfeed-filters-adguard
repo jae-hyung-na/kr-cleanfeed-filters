@@ -84,6 +84,8 @@ fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=starcraft"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=vtuber"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=lol"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=lol_foreign"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=fm26free"])
+fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=fm24free"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=fifa_online"])
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
 ! 

@@ -30,6 +30,9 @@ youtube.com###chat-container
 youtube.com###chat
 youtube.com##ytd-live-chat-frame
 youtube.com##ytd-live-chat-renderer
+! youtube "theater mode blank fix"
+youtube.com#$#ytd-watch-flexy[theater] #chat-container { display: none !important; width: 0 !important; min-width: 0 !important; }
+youtube.com#$#ytd-watch-flexy { --ytd-watch-flexy-sidebar-width: 0px !important; }
 ! youtube "live chat load block"
 ||youtube.com/live_chat$subdocument
 ||youtube.com/youtubei/v1/live_chat/$xmlhttprequest

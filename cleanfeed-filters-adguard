@@ -15,7 +15,7 @@ youtube.com###menu
 ! youtube "comments" block 
 youtube.com##ytd-comments
 ! youtube "live chat" remove
-youtube.com##ytd-live-chat-frame
+youtube.com##ytd-live-chat-frame, ytd-live-chat-renderer
 ! youtube "ambient mode" disalbe
 youtube.com###cinematics.ytd-watch-flexy
 youtube.com###cinematics,#shorts-cinematic-container

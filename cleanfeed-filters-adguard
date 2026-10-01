@@ -124,8 +124,3 @@ dcinside.com##.newvisit_history.vst
 dcinside.com#%#//scriptlet('set-cookie-reload', 'darkmode', '1')
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important
-!
-! chzzk_cleanfedd
-!
-! chzzk "hompage top-banner" remove
-chzzk.naver.com##div[data-nlog-area="home_top_skin"]

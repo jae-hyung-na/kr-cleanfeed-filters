@@ -19,8 +19,6 @@ youtube.com###chat-container
 youtube.com###chat
 youtube.com##ytd-live-chat-frame
 youtube.com##ytd-live-chat-renderer
-youtube.com#$#ytd-watch-flexy[theater] #chat-container { display: none !important; width: 0 !important; min-width: 0 !important; }
-youtube.com#$#ytd-watch-flexy { --ytd-watch-flexy-sidebar-width: 0px !important; }
 ! youtube "ambient mode" disalbe
 youtube.com###cinematics.ytd-watch-flexy
 youtube.com###cinematics,#shorts-cinematic-container

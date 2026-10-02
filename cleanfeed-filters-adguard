@@ -78,9 +78,6 @@ fmkorea.com##div[id*="cmtPosition"]
 ||fmkorea.com/*resize_image*.js$script
 ! fmkorea "comment editor" remove
 fmkorea.com##.cmt_editor
-fmkorea.com##.fdb_lst_wrp:style(margin-top: 20px !important;)
-fmkorea.com##.rd_fnt.rd_file
-fmkorea.com##.rd_ft_nav:style(border-top: 0 !important;) 
 ! fmkorea "related hotdeal list" remove
 fmkorea.com##.relevant_hotdeals
 ! fmkorea "affiliate product ads" remove

@@ -10,9 +10,6 @@
 ! 
 ! youtube_cleanfeed
 ! 
-! youtube "lightweight script trim"
-||google-analytics.com^$domain=youtube.com
-||googletagmanager.com^$script,domain=youtube.com
 ! youtube "telemetry trim"
 ||youtube.com/api/stats/qoe
 ||youtube.com/api/stats/delayplay

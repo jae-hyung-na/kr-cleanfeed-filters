@@ -19,8 +19,6 @@ youtube.com#$?#ytd-comments { remove: true; }
 ||youtube.com/api/stats/atr
 ||youtube.com/ptracking
 ||youtube.com/youtubei/v1/log_event
-! youtube "menu ui" remove
-youtube.com###menu
 ! youtube "comments" block 
 youtube.com#$?#ytd-comments { remove: true; }
 ! youtube "live chat" remove
@@ -43,11 +41,6 @@ youtube.com###cinematics,#shorts-cinematic-container
 youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! youtube "sidebar mixes" hide
 youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
-! youtube "channel watermark" disable
-youtube.com##.ytp-watermark
-youtube.com##.ytp-cards-teaser
-youtube.com##.ytp-ce-channel
-youtube.com##.iv-branding
 ! 
 ! fmkorea_cleanfeed
 ! 

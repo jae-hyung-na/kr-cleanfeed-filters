@@ -13,12 +13,6 @@
 !
 ! youtube "comments" remove
 youtube.com#$?#ytd-comments { remove: true; }
-! youtube "telemetry trim"
-||youtube.com/api/stats/qoe
-||youtube.com/api/stats/delayplay
-||youtube.com/api/stats/atr
-||youtube.com/ptracking
-||youtube.com/youtubei/v1/log_event
 ! youtube "ambient mode" disalbe
 youtube.com###cinematics.ytd-watch-flexy
 youtube.com###cinematics,#shorts-cinematic-container

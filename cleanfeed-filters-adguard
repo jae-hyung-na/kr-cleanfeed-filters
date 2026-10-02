@@ -11,7 +11,7 @@
 ! youtube_cleanfeed
 ! 
 !
-youtube.com#$?#ytd-watch-next-secondary-results-renderer { remove: true; }
+! youtube "comments" remove
 youtube.com#$?#ytd-comments { remove: true; }
 ! youtube "telemetry trim"
 ||youtube.com/api/stats/qoe

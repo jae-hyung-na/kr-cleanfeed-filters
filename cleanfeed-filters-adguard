@@ -18,10 +18,7 @@ youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-c
 youtube.com###cinematics.ytd-watch-flexy
 youtube.com###cinematics,#shorts-cinematic-container
 ! youtube "channel watermark" disable
-youtube.com##.ytp-watermark
-youtube.com##.ytp-cards-teaser
-youtube.com##.ytp-ce-channel
-youtube.com##.iv-branding
+youtube.com##.ytp-watermark { disable: true; }
 ! youtube "comments" remove
 youtube.com#$?#ytd-comments { remove: true; }
 ! 

@@ -10,6 +10,9 @@
 ! 
 ! youtube_cleanfeed
 ! 
+!
+youtube.com#$?#ytd-watch-next-secondary-results-renderer { remove: true; }
+youtube.com#$?#ytd-comments { remove: true; }
 ! youtube "telemetry trim"
 ||youtube.com/api/stats/qoe
 ||youtube.com/api/stats/delayplay
@@ -19,7 +22,7 @@
 ! youtube "menu ui" remove
 youtube.com###menu
 ! youtube "comments" block 
-youtube.com##ytd-comments
+youtube.com#$?#ytd-comments { remove: true; }
 ! youtube "live chat" remove
 youtube.com###chat-container
 youtube.com###chat

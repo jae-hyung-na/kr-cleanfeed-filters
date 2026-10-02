@@ -9,7 +9,6 @@
 !  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
 ! 
 ! youtube_cleanfeed
-! 
 !
 ! youtube "comments" remove
 youtube.com#$?#ytd-comments { remove: true; }

@@ -21,13 +21,13 @@ fmkorea.com##div[id*="cmtPosition"]
 ||fmkorea.com/*resize_image*.js$script
 ! 
 ! fmkorea "keyword filter" 
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|여성시대|메갈|트페미|캣맘|퀴어|페미|페미니스트|여성\s*군복무|맘충|퐁퐁|일뽕|원종단|쪽바리|혐한|베트남|베트콩|조선족|중국인|문신|문신충|쉬었음|캥거루|배달거지/i)
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|버튜버|이세돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i)
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/19\)|19\]|ㅇㅎ|ㅇㅎ\)|ㅇㅎ\]|ㅇㅎ?|ㅇㅎ?\)|ㅇㅎ?\]|야짤|야짤\)|약후|약후\)|약후\]|후방\)|후방\]|개걸레|ㅈ걸레|걸레|야설|참젖|거유|보지|보1지|노브라|브라|노팬티|미친\s*몸매|성욕|성매매|n번방|리벤지포르노|딥페이크|소라넷|업소|딸딸이|창녀|비키니|AV|AV\)|AV\]|카와키타\s*사이카|세토\s*칸나|명아츄|약혐|약혐\)|약혐\]|혐\]|혐\)|혐/i)
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/결정사|러너|러닝|전장연|여직원|매매혼|멘헤라|십일조|교회|불평등|금리|징역갤러리|무고죄|촉법소년|여경|양구|양구군|보디빌더|멸공반점|동학농민|여수\s*섬\s*박람회|청년\s*백수|백수|취업|사회적\s*지능/i)
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/이혼|이숙캠|이혼숙려|이혼숙려캠프|이혼녀|나는솔로|나솔|모태솔로|모솔|MBC|암살자\(들\)|암살자\[들\]|암살자들|BYD|삼국지/i)
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/박위|육영수|고영욱|유아인|윤미향|이스타|이스타\)|이스타\]|추멘|추멘\)|추멘\]|이동진|단군|오킹|배성재|황현필|더본|백종원|장사의신|장신|김세의|박진영|한정수|JK\s*김동욱|한문철|최진실\s*딸|최준희|사망여우|사망\s*여우|덕혜옹주|하이키\s*옐|박우현|닛몰캐시|닛몰캐쉬|트럼프/i)
-fmkorea.com#?#table.bd_lst tr:not(.notice):contains(/지금\s*직장인들\s*심정|\s*직장인들\s*심정|크보\s*졌다리그/i)
+fmkorea.com#?#li.li:has(h3.title:contains(/Blind|블라인드|블라|남초|여초|남혐|한녀|한남|여시|여성시대|메갈|트페미|캣맘|퀴어|페미|페미니스트|여성\s*군복무|맘충|퐁퐁|일뽕|원종단|쪽바리|혐한|베트남|베트콩|조선족|중국인|문신|문신충|쉬었음|캥거루|배달거지/i))
+fmkorea.com#?#li.li:has(h3.title:contains(/BJ|숲TV|SOOP|SOOP\s*TV|치지직|남캠|여캠|철구|버튜버|이세돌|TanVuus|Himass|히마스|탄부|PUBG|펍지|배그|배틀그라운드/i))
+fmkorea.com#?#li.li:has(h3.title:contains(/19\)|19\]|ㅇㅎ|ㅇㅎ\)|ㅇㅎ\]|ㅇㅎ?|ㅇㅎ?\)|ㅇㅎ?\]|야짤|야짤\)|약후|약후\)|약후\]|후방\)|후방\]|개걸레|ㅈ걸레|걸레|야설|참젖|거유|보지|보1지|노브라|브라|노팬티|미친\s*몸매|성욕|성매매|n번방|리벤지포르노|딥페이크|소라넷|업소|딸딸이|창녀|비키니|AV|AV\)|AV\]|카와키타\s*사이카|세토\s*칸나|명아츄|약혐|약혐\)|약혐\]|혐\]|혐\)|혐/i))
+fmkorea.com#?#li.li:has(h3.title:contains(/결정사|러너|러닝|전장연|여직원|매매혼|멘헤라|십일조|교회|불평등|금리|징역갤러리|무고죄|촉법소년|여경|양구|양구군|보디빌더|멸공반점|동학농민|여수\s*섬\s*박람회|청년\s*백수|백수|취업|사회적\s*지능/i))
+fmkorea.com#?#li.li:has(h3.title:contains(/이혼|이숙캠|이혼숙려|이혼숙려캠프|이혼녀|나는솔로|나솔|모태솔로|모솔|MBC|암살자\(들\)|암살자\[들\]|암살자들|BYD|삼국지/i))
+fmkorea.com#?#li.li:has(h3.title:contains(/박위|육영수|고영욱|유아인|윤미향|이스타|이스타\)|이스타\]|추멘|추멘\)|추멘\]|이동진|단군|오킹|배성재|황현필|더본|백종원|장사의신|장신|김세의|박진영|한정수|JK\s*김동욱|한문철|최진실\s*딸|최준희|사망여우|사망\s*여우|덕혜옹주|하이키\s*옐|박우현|닛몰캐시|닛몰캐쉬|트럼프/i))
+fmkorea.com#?#li.li:has(h3.title:contains(/지금\s*직장인들\s*심정|\s*직장인들\s*심정|크보\s*졌다리그/i))
 !
 ! fmkorea "poten galleries" blcok
 fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=politics"])

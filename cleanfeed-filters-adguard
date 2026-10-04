@@ -27,7 +27,7 @@ youtube.com#$?#ytd-comments { remove: true; }
 ! fmkorea "lightweight script trim"
 ||fmkorea.com/*analytics*.js$script
 ||fmkorea.com/*tracker*.js$script
-! fmkorea "night mode" force enable [FIXED: AdGuard scriptlet syntax]
+! fmkorea "night mode" force enable
 fmkorea.com#%#//scriptlet('set-cookie-reload', 'night_mode', 'Y')
 ! fmkorea "recent visited UI" remove
 fmkorea.com##.fm-recent-visited

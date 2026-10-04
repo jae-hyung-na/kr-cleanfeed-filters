@@ -9,7 +9,14 @@
 !  "js"      : 사이트 스크립트 대응 (충돌 가능성 있음)
 ! 
 ! youtube_cleanfeed
-!
+! 
+! youtube "menu ui" remove
+youtube.com###menu
+! youtube "telemetry trim"
+||youtube.com/api/stats/qoe$domain=youtube.com
+||youtube.com/ptracking$domain=youtube.com
+! youtube "home mixeds" hide
+youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! youtube "home mixeds" hide
 youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! youtube "sidebar mixes" hide
@@ -24,9 +31,6 @@ youtube.com#$?#ytd-comments { remove: true; }
 ! 
 ! fmkorea_cleanfeed
 ! 
-! fmkorea "lightweight script trim"
-||fmkorea.com/*analytics*.js$script
-||fmkorea.com/*tracker*.js$script
 ! fmkorea "night mode" force enable
 fmkorea.com#%#//scriptlet('set-cookie-reload', 'night_mode', 'Y')
 ! fmkorea "recent visited UI" remove

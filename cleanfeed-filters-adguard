@@ -43,7 +43,7 @@ fmkorea.com##.doc_sns
 ! fmkorea "report button" remove
 fmkorea.com##.declare_normal
 ! fmkorea "attachment file list" remove
-fmkorea.com##tbody:has(th:has-text(첨부파일))
+fmkorea.com#$?#div.rd_fnt.rd_file { remove: true; }
 ! fmkorea "comments" remove
 fmkorea.com##div[id*="cmtPosition"]
 ||fmkorea.com/*resize_image*.js$script

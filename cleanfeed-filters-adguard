@@ -68,6 +68,10 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 ! fmkorea "notice" remove
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
+! fmkoreea "shortcut ui" hide
+fmkorea.com##.fm_hot_key
+fmkorea.com##body > div.fm_hot_key
+fmkorea.com##html > body > div.fm_hot_key
 ! fmkorea "best top-exposed posts" remove
 fmkorea.com##li.li_best2_pop1
 fmkorea.com##li.li_best2_hotdeal1

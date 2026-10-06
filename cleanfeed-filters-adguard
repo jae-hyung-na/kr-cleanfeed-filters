@@ -68,6 +68,7 @@ fmkorea.com##header#header > div.Wrapper:style(padding-top: 9px !important;)
 ! fmkorea "notice" remove
 fmkorea.com##.fm_global_notice
 fmkorea.com##tr.notice
+fmkorea.com##main > div > div > div > p:has(> span[style*="font-size: 18px"] > b > a.night_default)
 ! fmkoreea "shortcut ui" hide
 fmkorea.com##.fm_hot_key
 fmkorea.com##body > div.fm_hot_key

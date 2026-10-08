@@ -17,8 +17,6 @@ youtube.com###menu
 ||youtube.com/ptracking$domain=youtube.com
 ! youtube "home mixeds" hide
 youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
-! youtube "home mixeds" hide
-youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! youtube "sidebar mixes" hide
 youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
 ! youtube "ambient mode" disalbe

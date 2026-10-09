@@ -15,17 +15,6 @@ youtube.com###menu
 ! youtube "telemetry trim"
 ||youtube.com/api/stats/qoe$domain=youtube.com
 ||youtube.com/ptracking$domain=youtube.com
-! youtube "home mixeds" hide
-youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
-! youtube "sidebar mixes" hide
-youtube.com##ytd-compact-radio-renderer, :is(#related yt-lockup-view-model,ytd-compact-video-renderer):has([href*="&start_radio=1"])
-! youtube "ambient mode" disalbe
-youtube.com###cinematics.ytd-watch-flexy
-youtube.com###cinematics,#shorts-cinematic-container
-! youtube "channel watermark" disable
-youtube.com##.ytp-watermark { disable: true; }
-! youtube "comments" remove
-youtube.com#$?#ytd-comments { remove: true; }
 ! 
 ! fmkorea_cleanfeed
 ! 

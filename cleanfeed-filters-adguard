@@ -10,8 +10,6 @@
 ! 
 ! youtube_cleanfeed
 ! 
-! youtube "menu ui" remove
-youtube.com###menu
 ! youtube "telemetry trim"
 ||youtube.com/api/stats/qoe$domain=youtube.com
 ||youtube.com/ptracking$domain=youtube.com

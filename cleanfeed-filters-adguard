@@ -13,6 +13,8 @@
 ! youtube "telemetry trim"
 ||youtube.com/api/stats/qoe$domain=youtube.com
 ||youtube.com/ptracking$domain=youtube.com
+! youtube "channel watermark" disable
+youtube.com##.ytp-watermark { disable: true; }
 ! 
 ! fmkorea_cleanfeed
 ! 

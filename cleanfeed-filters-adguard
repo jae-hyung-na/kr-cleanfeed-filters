@@ -35,9 +35,6 @@ fmkorea.com##.doc_sns
 fmkorea.com##.declare_normal
 ! fmkorea "attachment file list" remove
 fmkorea.com#$?#div.rd_fnt.rd_file { remove: true; }
-! fmkorea "comments" remove
-fmkorea.com##div[id*="cmtPosition"]
-||fmkorea.com/*resize_image*.js$script
 ! fmkorea "comment editor" remove
 fmkorea.com##.cmt_editor
 ! fmkorea "related hotdeal list" remove

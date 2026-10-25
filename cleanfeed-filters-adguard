@@ -78,7 +78,5 @@ fmkorea.com##body:has(a[href*="/best"]) li:has(a[href*="mid=valorant"])
 ! 
 ! dcinside "recent visit gallery UI" remove
 dcinside.com##.newvisit_history.vst
-! dcinside "night mode" force enable [FIXED: AdGuard scriptlet syntax]
-dcinside.com#%#//scriptlet('set-cookie-reload', 'darkmode', '1')
 ! dcinside "memory leak"
 ||googletagmanager.com/gtag/js$script,domain=gall.dcinside.com,important

@@ -20,6 +20,8 @@ youtube.com##ytd-rich-item-renderer:has([href*="start_radio=1"])
 ! 
 ! fmkorea_cleanfeed
 ! 
+! fmkorea "force night mode" 
+fmkorea.com##+js(set-cookie, night_mode, Y)
 ! fmkorea "recent visited UI" remove
 fmkorea.com##.fm-recent-visited
 ! fmkorea "recent searches UI" remove
